@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusão de Dados — Fortaleza em Música</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: .4rem;
+    }
+
+    header p {
+      font-size: .95rem;
+      opacity: .85;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+      color: #1a237e;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e8eaf6;
+      padding-bottom: .5rem;
+    }
+
+    p, li { margin-bottom: .6rem; }
+
+    ul { padding-left: 1.4rem; }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: .35rem;
+      margin-top: 1rem;
+    }
+
+    label:first-of-type { margin-top: 0; }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: .6rem .8rem;
+      border: 1px solid #c5cae9;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #333;
+      background: #fafafa;
+      transition: border-color .2s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #1a237e;
+      background: #fff;
+    }
+
+    textarea { resize: vertical; min-height: 120px; }
+
+    .hint {
+      font-size: .82rem;
+      color: #666;
+      margin-top: .25rem;
+      margin-bottom: 0;
+    }
+
+    button[type="submit"] {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: .75rem 2rem;
+      background: #1a237e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    button[type="submit"]:hover { background: #283593; }
+
+    .info-box {
+      background: #e8eaf6;
+      border-left: 4px solid #1a237e;
+      border-radius: 0 6px 6px 0;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .info-box p { margin-bottom: 0; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .85rem;
+      color: #888;
+    }
+
+    a { color: #1a237e; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fortaleza em Música</h1>
+  <p>Solicitação de Exclusão de Dados do Usuário</p>
+</header>
+
+<main>
+
+  <!-- Informativo -->
+  <section>
+    <h2>Sobre esta página</h2>
+    <p>
+      Em conformidade com as políticas de privacidade do Facebook e demais
+      plataformas, e em respeito à privacidade dos nossos usuários, oferecemos
+      esta página para que você solicite a <strong>exclusão dos seus dados
+      pessoais</strong> vinculados ao aplicativo <strong>Fortaleza em
+      Música</strong>.
+    </p>
+    <div class="info-box">
+      <p>
+        Após o envio do formulário, você receberá uma confirmação por e-mail.
+        Sua solicitação será analisada e processada em até <strong>30 dias</strong>.
+      </p>
+    </div>
+    <p>
+      Os dados que podem ser excluídos incluem:
+    </p>
+    <ul>
+      <li>Informações de perfil vinculadas à sua conta do Facebook;</li>
+      <li>Histórico de uso e preferências salvas no aplicativo;</li>
+      <li>Quaisquer outros dados pessoais associados à sua conta.</li>
+    </ul>
+  </section>
+
+  <!-- Formulário -->
+  <section>
+    <h2>Formulário de Solicitação</h2>
+    <form
+      action="https://formsubmit.co/fernandolopes.s@outlook.com.br"
+      method="POST"
+    >
+      <!-- Configurações FormSubmit -->
+      <input type="hidden" name="_subject" value="Solicitação de Exclusão de Dados — Fortaleza em Música" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value="https://fernandolopes.github.io/exclusao-de-dados-confirmacao.html" />
+
+      <label for="nome">Nome completo</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Seu nome completo"
+        required
+      />
+
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="seu@email.com"
+        required
+      />
+      <p class="hint">Informe o e-mail associado à conta cujos dados deseja excluir.</p>
+
+      <label for="facebook_id">ID do usuário do Facebook <span style="font-weight:400">(opcional)</span></label>
+      <input
+        type="text"
+        id="facebook_id"
+        name="facebook_id"
+        placeholder="Ex.: 123456789"
+      />
+      <p class="hint">
+        Você pode encontrar seu ID acessando
+        <a href="https://www.facebook.com/help/1397933243959495" target="_blank" rel="noopener noreferrer">
+          esta página de ajuda do Facebook
+        </a>.
+      </p>
+
+      <label for="motivo">Motivo da solicitação <span style="font-weight:400">(opcional)</span></label>
+      <textarea
+        id="motivo"
+        name="motivo"
+        placeholder="Descreva brevemente o motivo da solicitação, se desejar."
+      ></textarea>
+
+      <button type="submit">Enviar solicitação</button>
+    </form>
+  </section>
+
+  <!-- Contato alternativo -->
+  <section>
+    <h2>Contato alternativo</h2>
+    <p>
+      Se preferir, você também pode enviar sua solicitação diretamente por
+      e-mail para:
+      <a href="mailto:fernandolopes.s@outlook.com.br">fernandolopes.s@outlook.com.br</a>
+    </p>
+    <p>
+      Inclua no assunto: <em>"Exclusão de Dados — Fortaleza em Música"</em> e
+      informe o nome e o e-mail vinculados à sua conta.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Fortaleza em Música — <a href="politica-de-uso.html">Política de Uso</a></p>
+</footer>
+
+</body>
+</html>
